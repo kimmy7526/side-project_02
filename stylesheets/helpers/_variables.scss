@@ -81,7 +81,7 @@ $theme-colors: (
   //$primary,
   "secondary": #A18E70,
   //$secondary,
-  "success": $success,
+  "success": #DCE3E7,
   "info": $info,
   "warning": $warning,
   "danger": $danger,
@@ -398,7 +398,7 @@ $position-values: (
 
 $body-bg: $white  !default;
 $body-color: $gray-900  !default;
-$body-text-align: null !default;
+$body-text-align: center; //null !default;
 
 // Utilities maps
 //
@@ -429,7 +429,7 @@ $utilities-bg-colors: map-loop($utilities-bg, rgba-css-var, "$key", "bg") !defau
 //
 // Style anchor elements.
 
-$link-color: $primary  !default;
+$link-color: $light; //$primary  !default;
 $link-decoration: underline !default;
 $link-shade-percentage: 20% !default;
 $link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
@@ -1113,10 +1113,10 @@ $nav-pills-link-active-bg: $component-active-bg  !default;
 // Navbar
 
 // scss-docs-start navbar-variables
-$navbar-padding-y: $spacer * .5 !default;
+$navbar-padding-y: 10px; //$spacer * .5 !default;
 $navbar-padding-x: null !default;
 
-$navbar-nav-link-padding-x: .5rem !default;
+$navbar-nav-link-padding-x: 25px; //.5rem !default;
 
 $navbar-brand-font-size: $font-size-lg  !default;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link

@@ -6,21 +6,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="scss/01.css">
+    <link rel="stylesheet" href="scss/all.css">
 </head>
 
 
+<!-- tag-container-row-col -->
 
 <body>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-danger">Danger</button>
-    <button type="button" class="btn btn-warning">Warning</button>
-    <button type="button" class="btn btn-info">Info</button>
-    <button type="button" class="btn btn-light">Light</button>
-    <button type="button" class="btn btn-dark">Dark</button>    
-    <button type="button" class="btn btn-link">Link</button>
+    <!-- header  -->
+    <header class="header"></header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="pic/restaurant.png" alt="logo" height="40px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">食譜</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">小舖</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- card -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width:100%;">
+                    <img src="pic/pexels-blank-space-2967008.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">奶茶</h5>
+                        <p class="card-text">奶茶介紹</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 100%;">
+                    <img src="pic/pexels-blank-space-2967008.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">奶茶</h5>
+                        <p class="card-text">奶茶介紹</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 100%;">
+                    <img src="pic/pexels-blank-space-2967008.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">奶茶</h5>
+                        <p class="card-text">奶茶介紹</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <footer class="footer bg-secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2>牛奶與茶</h2>
+                        </div>
+                        <div class="col">
+                            <!-- email+address -->
+                            <!-- <img src="pic/email.png" alt="email" style="width: 40px;">
+                            <span>kimmy7526@gmail.com</span>
+                            <img src="pic/email.png" alt="address" style="width: 40px;">
+                            <span>台灣</span> -->
+                        </div>
+                        <div class="col">
+                            <!-- fb+ig -->
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    &copy; 2022/7/7
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
