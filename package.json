@@ -1,0 +1,22 @@
+{
+  "name": "project_02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "01.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimmy7526/side-project_02.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kimmy7526/side-project_02/issues"
+  },
+  "homepage": "https://github.com/kimmy7526/side-project_02#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
