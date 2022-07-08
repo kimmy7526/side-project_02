@@ -1,11 +1,11 @@
 @import "../node_modules/bootstrap/scss/functions";
-@import "helpers/variables";
+@import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
 @import "../node_modules/bootstrap/scss/bootstrap";
-
 //區塊式內容
-@import "components/header"
+@import "../stylesheets/components/header";
+@import "../stylesheets/components/footer";
+
 
 //元件
-
