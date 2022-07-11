@@ -1,0 +1,12 @@
+//card
+// .card-style1{
+//     display: flex;
+//     align-items: center;
+// }
+
+.btn-style1{
+
+    &:hover{
+        background-color:transparent;
+    }
+}

@@ -1,0 +1,41 @@
+.second {
+    height: 100vh;
+    // 背景設定
+    background: url("https://images.pexels.com/photos/1076429/pexels-photo-1076429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center/cover;
+    //固定垂直致中
+    display: flex;
+    align-items: center;
+
+    .row {
+        backdrop-filter: blur(25px);
+        max-height: 40vh;
+
+        //card?
+        .signup {
+            background: $primary;
+            color: $light;
+            position: relative;
+            height: 140%;
+            top: -20%;
+            box-shadow: 3px 3px 9px $dark;
+            // padding-top: 10%;
+        }
+
+        .login {
+            color: $secondary;
+            .form-control {
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid $light;
+                transition:border-bottom .5s;
+                &:hover {
+                    border-bottom: 1px solid $primary;
+                }
+            }
+
+            .form-check {
+                text-align: start;
+            }
+        }
+    }
+}
