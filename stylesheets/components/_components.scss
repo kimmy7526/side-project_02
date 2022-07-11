@@ -1,12 +1,13 @@
 //card
 // .card-style1{
 //     display: flex;
-//     align-items: center;
+//     align-items: center;cursive
 // }
 
 .btn-style1{
-
+    transition: .3s;
     &:hover{
-        background-color:transparent;
+        color:$light;
     }
 }
+

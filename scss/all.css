@@ -4,6 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -50,7 +51,7 @@
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-family: Comic Sans MS;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -2306,22 +2307,22 @@ progress {
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #343a40;
+  color: #adb5bd;
   opacity: 1;
 }
 
 .form-control:-ms-input-placeholder {
-  color: #343a40;
+  color: #adb5bd;
   opacity: 1;
 }
 
 .form-control::-ms-input-placeholder {
-  color: #343a40;
+  color: #adb5bd;
   opacity: 1;
 }
 
 .form-control::placeholder {
-  color: #343a40;
+  color: #adb5bd;
   opacity: 1;
 }
 
@@ -6585,7 +6586,7 @@ fieldset:disabled .btn {
   z-index: 1080;
   display: block;
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Comic Sans MS";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6698,7 +6699,7 @@ fieldset:disabled .btn {
   z-index: 1070;
   display: block;
   max-width: 276px;
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Comic Sans MS";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -11958,23 +11959,20 @@ fieldset:disabled .btn {
   }
 }
 
-.nav-link {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.nav-link:hover {
-  background-color: #A18E70;
-}
-
-.footer h2, .footer .h2 {
+.footer {
   color: #DCE3E7;
+}
+
+.footer span {
+  font-family: 'Noto Sans TC';
+  font-size: 35px;
+  color: #E0C68B;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
 }
 
-.footer li {
+.footer ul li {
   list-style-type: none;
 }
 
@@ -11992,40 +11990,43 @@ fieldset:disabled .btn {
 .second .row {
   -webkit-backdrop-filter: blur(25px);
           backdrop-filter: blur(25px);
-  max-height: 40vh;
 }
 
 .second .row .signup {
   background: #4B4F6B;
   color: #DCE3E7;
-  position: relative;
   height: 140%;
   top: -20%;
   -webkit-box-shadow: 3px 3px 9px #3A302E;
           box-shadow: 3px 3px 9px #3A302E;
 }
 
+.second .row .signup .card-img-overlay {
+  padding: 10%;
+}
+
 .second .row .login {
-  color: #A18E70;
+  color: #E0C68B;
 }
 
 .second .row .login .form-control {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #DCE3E7;
+  border-bottom: 1px solid #E0C68B;
   -webkit-transition: border-bottom .5s;
   transition: border-bottom .5s;
-}
-
-.second .row .login .form-control:hover {
-  border-bottom: 1px solid #4B4F6B;
 }
 
 .second .row .login .form-check {
   text-align: start;
 }
 
+.btn-style1 {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
 .btn-style1:hover {
-  background-color: transparent;
+  color: #DCE3E7;
 }
 /*# sourceMappingURL=all.css.map */

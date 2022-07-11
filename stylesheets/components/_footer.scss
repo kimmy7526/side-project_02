@@ -1,14 +1,16 @@
 .footer{
-    // margin-top: 50px;
-    h2{
-        color:$light;
+    color:$light;
+    span{
+        font-family: 'Noto Sans TC';
+        font-size: 35px;
+        color:$info;
         writing-mode:vertical-lr;
     }
-    p{
-        
+    ul{
+        // align-items: flex-end;
+        li{
+            list-style-type: none;
+        }
     }
-    li{
-        list-style-type: none;
-    }
-    
+
 }
