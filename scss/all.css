@@ -5110,7 +5110,7 @@ fieldset:disabled .btn {
       -ms-flex-direction: column;
           flex-direction: column;
   min-width: 0;
-  height: 500px;
+  height: 450px;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
@@ -11963,17 +11963,14 @@ fieldset:disabled .btn {
   color: #DCE3E7;
 }
 
+.footer ul li {
+  list-style-type: none;
+}
+
 .footer span {
-  font-family: 'Noto Sans TC';
-  font-size: 35px;
-  color: #E0C68B;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
-}
-
-.footer ul li {
-  list-style-type: none;
 }
 
 .second {
@@ -12028,5 +12025,11 @@ fieldset:disabled .btn {
 
 .btn-style1:hover {
   color: #DCE3E7;
+}
+
+span {
+  font-family: 'Noto Sans TC';
+  font-size: 35px;
+  color: #E0C68B;
 }
 /*# sourceMappingURL=all.css.map */

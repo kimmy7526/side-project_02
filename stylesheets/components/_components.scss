@@ -3,6 +3,16 @@
 //     display: flex;
 //     align-items: center;cursive
 // }
+//整合向上30  section?
+// %mt{
+//     margin-top:30px;
+// }
+// .container{
+//     @extend %mt;
+// }
+// .container-fluid{
+//     @extend %mt;
+// }
 
 .btn-style1{
     transition: .3s;
@@ -10,4 +20,8 @@
         color:$light;
     }
 }
-
+span{
+    font-family: 'Noto Sans TC';
+    font-size: 35px;
+    color:$info;
+}
