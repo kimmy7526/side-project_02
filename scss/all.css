@@ -11959,8 +11959,23 @@ fieldset:disabled .btn {
   }
 }
 
+.navbar ul li {
+  margin: 0 30px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.navbar ul li:hover {
+  -webkit-box-shadow: inset 0 0 0 3px #E0C68B;
+          box-shadow: inset 0 0 0 3px #E0C68B;
+}
+
 .footer {
   color: #DCE3E7;
+}
+
+.footer ul {
+  padding-left: 0;
 }
 
 .footer ul li {
@@ -12031,5 +12046,41 @@ span {
   font-family: 'Noto Sans TC';
   font-size: 35px;
   color: #E0C68B;
+}
+
+.jumbotron {
+  height: 100vh;
+  margin-top: 30px;
+}
+
+.jumbotron:nth-child(1) {
+  background: url("https://images.pexels.com/photos/229493/pexels-photo-229493.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1s") no-repeat center/cover;
+}
+
+.jumbotron:nth-child(2) {
+  background: url("https://images.pexels.com/photos/1913785/pexels-photo-1913785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center/cover;
+}
+
+.jumbotron:nth-child(3) {
+  background: url("https://images.pexels.com/photos/1821797/pexels-photo-1821797.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center/cover;
+}
+
+.recipe button {
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: 90px;
+  height: 90px;
+  border: none;
+}
+
+.recipe button:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background-color: #A18E70;
+  border-radius: 50%;
+}
+
+.recipe button p {
+  display: inline;
 }
 /*# sourceMappingURL=all.css.map */
