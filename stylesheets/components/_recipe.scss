@@ -1,0 +1,53 @@
+.recipe {
+    position: relative;
+
+    .hot {
+        position: absolute;
+        left: 20px;
+        top:-2px;
+        height: 90px;
+        writing-mode: vertical-lr;
+        padding: 5px;
+        background-image:linear-gradient(-75deg,$secondary,$info);
+        box-shadow: 3px 3px 3px $dark;
+        &::after{
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+        }
+    }
+    .row {
+        .col {
+            padding-top: 50px;
+            &:hover {
+                transform: translateY(-25px);
+            }
+        }
+    }
+
+
+    button {
+        position: relative;
+        transition: .5s;
+        width: 90px;
+        height: 90px;
+        line-height: 66px;
+        border: none;
+        border-radius: 10%;
+
+        p {
+            margin-bottom: 0px;
+        }
+
+        &:hover {
+            transform: rotate(90deg);
+            background-color: $secondary;
+            border-radius: 50%;
+
+            p {
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}

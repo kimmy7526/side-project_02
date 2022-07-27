@@ -1,0 +1,59 @@
+.section {
+
+    .jumbotron {
+        position: relative;
+        height: 100vh;
+        margin-top: 30px;
+
+        &:nth-child(1) {
+            background: url("https://images.pexels.com/photos/1913785/pexels-photo-1913785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center/cover;
+        }
+
+        &:nth-child(2) {
+            background: url("https://images.pexels.com/photos/229493/pexels-photo-229493.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1s") no-repeat center/cover;
+        }
+
+        &:nth-child(3) {
+            background: url("https://images.pexels.com/photos/1821797/pexels-photo-1821797.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center/cover;
+            //    垂直置中
+            line-height: 100vh;
+
+            span {
+                writing-mode: vertical-lr;
+                // 兩行間距
+                line-height:50px;
+                font-family:cursive
+            }
+        }
+
+        .diamond {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 100px;
+            margin: auto;
+            width: 400px;
+            height: 400px;
+            background-color: $light;
+            transform: rotate(45deg);
+            box-shadow: inset 0 0 0 25px $primary,
+                inset 0 0 0 30px $secondary;
+
+            .square {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+                width: 300px;
+                height: 300px;
+                transform: rotate(-45deg);
+                border: 3px solid $info;
+                // background-color: #fff;
+            }
+        }
+
+
+    }
+}

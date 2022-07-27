@@ -1,14 +1,40 @@
-.footer{
-    color:$light;
-    
-    ul{
-        // align-items: flex-end;
+footer {
+    color: $light;
+
+    ul {
         padding-left: 0;
-        li{
+
+        li {
             list-style-type: none;
+            margin-bottom: 10px;
+            letter-spacing: .5px;
         }
     }
-    span{
-        writing-mode:vertical-lr;
+
+    a {
+        margin: 0 10px;
     }
+
+    span {
+        writing-mode: vertical-lr;
+    }
+
+    .row {
+        div:nth-child(1) {
+            text-align: start;
+        }
+
+        div:nth-child(2) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div:nth-child(3) {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+    }
+
 }
