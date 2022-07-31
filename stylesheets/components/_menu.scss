@@ -1,32 +1,44 @@
-.recipe {
+.menu {
     position: relative;
-
     .hot {
         position: absolute;
         left: 20px;
-        top:-2px;
-        height: 90px;
+        top: -2px;
+        height: 80px;
         writing-mode: vertical-lr;
-        padding: 5px;
-        background-image:linear-gradient(-75deg,$secondary,$info);
-        box-shadow: 3px 3px 3px $dark;
-        &::after{
+        padding: 3px;
+        background-image: linear-gradient(0deg, $secondary, $info);
+        box-shadow: 3px 3px 3px black;
+        &::after {
+            content: "";
             display: block;
-            width: 30px;
-            height: 30px;
-            background-color: #fff;
+            width: 0;
+            height: 0;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            border-bottom: 5px solid transparent;
+            border-top: 5px solid $secondary;
+            border-left: 15px solid $secondary;
+            border-right: 15px solid $secondary;
         }
     }
+
     .row {
         .col {
             padding-top: 50px;
+            position: relative;
             &:hover {
                 transform: translateY(-25px);
+            }
+
+            .card-body{
+              background-color:transparent;
             }
         }
     }
 
-
+  
     button {
         position: relative;
         transition: .5s;

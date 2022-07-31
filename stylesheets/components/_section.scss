@@ -7,6 +7,7 @@
 
         &:nth-child(1) {
             background: url("https://images.pexels.com/photos/1913785/pexels-photo-1913785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center/cover;
+            // box-shadow: inset 0px 0px 100px 50px $dark;
         }
 
         &:nth-child(2) {
@@ -21,8 +22,8 @@
             span {
                 writing-mode: vertical-lr;
                 // 兩行間距
-                line-height:50px;
-                font-family:cursive
+                line-height: 50px;
+                font-family: cursive
             }
         }
 
@@ -49,7 +50,11 @@
                 width: 300px;
                 height: 300px;
                 transform: rotate(-45deg);
-                border: 3px solid $info;
+                // border: 3px solid $info;
+                // display: flex;
+                // flex-wrap: wrap;
+                // justify-content: center;
+                // align-items: center;
                 // background-color: #fff;
             }
         }

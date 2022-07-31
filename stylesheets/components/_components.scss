@@ -1,15 +1,18 @@
-span{
+span {
     font-family: 'Noto Sans TC';
     font-size: 35px;
-    color:$info;
+    color: $info;
+}
+body{
+    // background: url(https://images.pexels.com/photos/1411677/pexels-photo-1411677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background: url(https://images.pexels.com/photos/4709425/pexels-photo-4709425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
 }
 
 
-
-.btn-style1{
+.btn-style1 {
     transition: .3s;
-    &:hover{
-        color:$light;
+
+    &:hover {
+        color: $light;
     }
 }
-

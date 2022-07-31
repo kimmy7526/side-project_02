@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="scss/all.css">
 </head>
 
-<!--  漢堡選項底線 / 菜單按鈕變化 / footer -->
+
 <!-- tag(header/section/footer)-container-row-col -->
 
 <!-- navbar
     -banner(縮小上滑，多張照片組成一張，滿版)
-    -chose(食譜-精選+輕鬆+新品-hover放大)
+    -chose(輕鬆泡奶茶，介紹網站目的一上一下這樣)
     -content(菱形:一左一右/一中:牛奶與茶，吸引人的句子。)
     -card-group
     -footer -->
@@ -24,8 +24,8 @@
 <!-- fontRFS -->
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+    <!-- navbar  去三角 -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -54,7 +54,7 @@
                             data-bs-toggle="dropdown" aria-expanded="false">
                             食譜
                         </a>
-                        <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">輕鬆</a></li>
                             <li><a class="dropdown-item" href="#">精選</a></li>
                             <li><a class="dropdown-item" href="#">熱門</a></li>
@@ -66,7 +66,7 @@
                             data-bs-toggle="dropdown" aria-expanded="false">
                             小舖
                         </a>
-                        <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">採購專區</a></li>
                             <li>
                                 <hr class="dropdown-divider">
@@ -79,7 +79,7 @@
         </div>
     </nav>
 
-    <!-- banner  -->
+    <!-- banner  layout-->
     <img src="pic/pexels-blank-space-2967008.jpg" class="img-fluid" alt="...">
     <!-- <div class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -88,11 +88,40 @@
         </div>
       </div> -->
 
-    <!-- chose -->
-    <!-- js5 https://www.youtube.com/watch?v=7hGFTNGommU&list=PLEfh-m_KG4dYbxVoYDyT_fmXZHnuKg2Fq&index=5&ab_channel=Alex%E5%AE%85%E5%B9%B9%E5%98%9B -->
+    <!-- panels -->
+    <div class="panels">
+        <div class="panel">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, eum. Eligendi numquam aliquid sequi
+            </p>
+            <p>輕鬆</p>
+            <p>Nulla mollitia consequuntur aliquam, voluptates natus et dolorem? Ipsum impedit at exercitationem
+            </p>
+        </div>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint nisi ipsum culpa, sapiente, debitis
+            </p>
+            <p>泡</p>
+            <p>Ipsa nisi optio enim nobis quos molestiae, quia, animi accusantium sint perferendis veritatis
+            </p>
+        </div>
+        <div class="panel">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, harum consectetur? Ducimus
+            </p>
+            <p>飲料</p>
+            <p>Optio, consequuntur quas cumque iste sed ut obcaecati quia, quidem natus provident delectus beatae?
+            </p>
+        </div>
+        <div class="panel">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, harum consectetur? Ducimus
+            </p>
+            <p>飲料</p>
+            <p>Optio, consequuntur quas cumque iste sed ut obcaecati quia, quidem natus provident delectus beatae?
+            </p>
+        </div>
+    </div>
 
-    <!-- section  -->
-    <!-- line-height?  -->
+
+    <!-- section -->
     <div class="section">
         <div class="jumbotron jumbotron-fluid">
             <div class="diamond">
@@ -121,40 +150,50 @@
     </div>
 
 
-    <!-- recipe -->
-    <!-- love hot的尖角 a -->
-    <div class="recipe container mt-5">
+    <!-- menu -->
+    <!-- love  hover變暗放大/ 名稱內容-->
+    <div class="menu container mt-5">
         <div class="row row-cols-1 row-cols-md-3 gx-4">
             <div class="col">
-                <div class="card h-100">
-                    <div class="hot">今日精選</div>
-                    <img src="pic/pexels-blank-space-2967008.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">
-                            渲染漸變的茶色，猶如街頭嬉皮風趣的男子，口中恣意地哼著音階。濃郁的紅茶香，本是味覺記憶中的絕品，與溫順甘醇的鮮奶兩相平衡，為奶茶的底蘊更添一股味蕾衝擊，絲滑細膩使人覺醒</p>
+                <a href="">
+                    <div class="card h-100">
+                        <div class="hot">本月精選</div>
+                        <img src="pic/pexels-blank-space-2967008.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                渲染漸變的茶色，猶如街頭嬉皮風趣的男子，口中恣意地哼著音階。濃郁的紅茶香，本是味覺記憶中的絕品，與溫順甘醇的鮮奶兩相平衡，為奶茶的底蘊更添一股味蕾衝擊，絲滑細膩使人覺醒</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col">
-                <div class="card h-100">
-                    <img src="pic/pexels-blank-space-2967008.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+                <a href="">
+                    <div class="card h-100">
+                        <div class="hot">本月精選</div>
+                        <img src="pic/pexels-blank-space-2967008.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col">
-                <div class="card h-100">
-                    <img src="pic/pexels-blank-space-2967008.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content.</p>
+                <a href="">
+                    <div class="card h-100">
+                        <div class="hot">本月精選</div>
+                        <img src="pic/pexels-blank-space-2967008.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to
+                                additional content.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
 
