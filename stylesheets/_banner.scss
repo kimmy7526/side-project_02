@@ -1,0 +1,21 @@
+.ban {
+    margin-top: 80px;
+    
+
+    height: 80vh;
+    overflow: hidden;
+
+    img {
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .col {
+        padding: 0;
+        overflow: hidden;
+        height: 30vh;
+    }
+    .ban-main {
+        height: 50vh;
+    }
+}

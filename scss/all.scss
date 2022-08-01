@@ -4,16 +4,17 @@
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 //區塊式內容
-@import "../stylesheets/components/01";
-@import "../stylesheets/components/header";
-@import "../stylesheets/components/panels";
-@import "../stylesheets/components/section";
-@import "../stylesheets/components/menu";
-@import "../stylesheets/components/footer";
-@import "../stylesheets/components/02";
+@import "../stylesheets/navbar";
+@import "../stylesheets/banner";
+@import "../stylesheets/panels";
+@import "../stylesheets/menu";
+@import "../stylesheets/footer";
 
+@import "../stylesheets/01";
+@import "../stylesheets/02";
+@import "../stylesheets/04";
 
 //元件
-@import "../stylesheets/components/components";
+@import "../stylesheets/components";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&display=swap');
 

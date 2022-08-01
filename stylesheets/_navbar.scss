@@ -1,0 +1,46 @@
+%navbar-bgc{
+    background-color: $info;
+    opacity: .95;
+    box-shadow: inset 0px 0px 50px 5px $dark;
+}
+
+.navbar {
+    @extend %navbar-bgc;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    
+    a {
+        color: $light;
+        &:hover{
+            color: $primary;
+        }
+        &::after {
+            display: none;
+        }
+    }
+
+    .dropdown {
+        li{
+            margin: 0;
+        }
+        .dropdown-menu{
+            @extend %navbar-bgc;
+            text-align: center;   
+            .dropdown-item:hover{
+                background: $dark;
+                color: $primary; 
+            }
+        }
+        &:hover .dropdown-menu {
+            //原本 display:none;
+            display: block;
+        }
+    }
+
+    li {
+        margin: 0 25px;
+    }
+}

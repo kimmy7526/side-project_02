@@ -11,21 +11,17 @@
     <link rel="stylesheet" href="scss/all.css">
 </head>
 
-
-<!-- tag(header/section/footer)-container-row-col -->
-
-<!-- navbar
-    -banner(縮小上滑，多張照片組成一張，滿版)
-    -chose(輕鬆泡奶茶，介紹網站目的一上一下這樣)
-    -content(菱形:一左一右/一中:牛奶與茶，吸引人的句子。)
-    -card-group
-    -footer -->
+<!-- navbar(logo
+    banner (縮小上滑
+    panels (click:變暗+放大 上下介紹
+    card-group (btn love
+    footer (logo-->
 
 <!-- fontRFS -->
 
 <body>
-    <!-- navbar  去三角 -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -35,13 +31,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="http://127.0.0.1:5500/02.html">登入</a>
+                        <a class="nav-link" aria-current="page" href="http://127.0.0.1:5500/02_login.html">登入</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">測驗</a>
+                        <a class="nav-link" href="http://127.0.0.1:5500/03_game.html">測驗</a>
                     </li>
                     <li class="nav-item">
-                        <a class="navbar-brand m-auto" href="#">
+                        <a class="navbar-brand m-auto" href="http://127.0.0.1:5500/01_main.html">
                             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
                                 class="bi bi-droplet-fill" viewBox="0 0 16 16">
                                 <path
@@ -50,27 +46,23 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="http://127.0.0.1:5500/04_menu.html"
+                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             食譜
                         </a>
-                        <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">輕鬆</a></li>
-                            <li><a class="dropdown-item" href="#">精選</a></li>
-                            <li><a class="dropdown-item" href="#">熱門</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">介紹</a></li>
+                            <li><a class="dropdown-item" href="#">菜單</a></li>
                             <li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="http://127.0.0.1:5500/05_shop.html"
+                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             小舖
                         </a>
-                        <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">採購專區</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
                             <li><a class="dropdown-item" href="#">購物車</a></li>
                         </ul>
                     </li>
@@ -79,14 +71,25 @@
         </div>
     </nav>
 
-    <!-- banner  layout-->
-    <img src="pic/pexels-blank-space-2967008.jpg" class="img-fluid" alt="...">
-    <!-- <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Fluid jumbotron</h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    <!-- banner-->
+    <div class="ban container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col col-12 ban-main"><img src="https://picsum.photos/800/600/?random=1" alt=""></div>
+                    <div class="col col-6"><img src="https://picsum.photos/800/600/?random=2" alt=""></div>
+                    <div class="col col-6"><img src="https://picsum.photos/800/600/?random=3" alt=""></div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col col-6"><img src="https://picsum.photos/800/600/?random=11" alt=""></div>
+                    <div class="col col-6"><img src="https://picsum.photos/800/600/?random=22" alt=""></div>
+                    <div class="col col-12 ban-main"><img src="https://picsum.photos/800/600/?random=33" alt=""></div>
+                </div>
+            </div>
         </div>
-      </div> -->
+    </div>
 
     <!-- panels -->
     <div class="panels">
@@ -120,103 +123,72 @@
         </div>
     </div>
 
-
-    <!-- section -->
-    <div class="section">
-        <div class="jumbotron jumbotron-fluid">
-            <div class="diamond">
-                <div class="square">
-                    <h3 class="display-4">牛奶</h3>
-                    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its
-                        parent.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4">Fluid jumbotron</h1>
-                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
-                </p>
-            </div>
-        </div>
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <span>努力從今天開始
-                    <br>奶茶從今天喝起
-                </span>
-            </div>
-        </div>
-    </div>
-
-
     <!-- menu -->
-    <!-- love  hover變暗放大/ 名稱內容-->
     <div class="menu container mt-5">
         <div class="row row-cols-1 row-cols-md-3 gx-4">
             <div class="col">
-                <a href="">
-                    <div class="card h-100">
-                        <div class="hot">本月精選</div>
+                <div class="card h-100">
+                    <div class="hot">本月精選</div>
+                    <a href="">
                         <img src="pic/pexels-blank-space-2967008.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">
-                                渲染漸變的茶色，猶如街頭嬉皮風趣的男子，口中恣意地哼著音階。濃郁的紅茶香，本是味覺記憶中的絕品，與溫順甘醇的鮮奶兩相平衡，為奶茶的底蘊更添一股味蕾衝擊，絲滑細膩使人覺醒</p>
+                                渲染漸變的茶色，猶如街頭嬉皮風趣的男子，口中恣意地哼著音階。濃郁的紅茶香，本是味覺記憶中的絕品，與溫順甘醇的鮮奶兩相平衡，為奶茶的底蘊更添一股味蕾衝擊，絲滑細膩使人覺醒
+                            </p>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
             <div class="col">
-                <a href="">
-                    <div class="card h-100">
-                        <div class="hot">本月精選</div>
+                <div class="card h-100">
+                    <div class="hot">本月精選</div>
+                    <a href="">
                         <img src="pic/pexels-blank-space-2967008.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to
-                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text">
+                                渲染漸變的茶色，猶如街頭嬉皮風趣的男子，口中恣意地哼著音階。濃郁的紅茶香，本是味覺記憶中的絕品，與溫順甘醇的鮮奶兩相平衡，為奶茶的底蘊更添一股味蕾衝擊，絲滑細膩使人覺醒
+                            </p>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
             <div class="col">
-                <a href="">
-                    <div class="card h-100">
-                        <div class="hot">本月精選</div>
+                <div class="card h-100">
+                    <div class="hot">本月精選</div>
+                    <a href="">
                         <img src="pic/pexels-blank-space-2967008.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to
-                                additional content.</p>
+                            <p class="card-text">
+                                渲染漸變的茶色，猶如街頭嬉皮風趣的男子，口中恣意地哼著音階。濃郁的紅茶香，本是味覺記憶中的絕品，與溫順甘醇的鮮奶兩相平衡，為奶茶的底蘊更添一股味蕾衝擊，絲滑細膩使人覺醒
+                            </p>
                         </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
         </div>
 
-        <button type="button" class="btn btn-primary mt-5">
+        <button type="button" class="btn btn-info mt-5">
             <p> 查看更多</p>
         </button>
 
     </div>
 
     <!-- footer-->
-    <!-- !!!修改span svg置中 -->
-    <footer class="bg-primary mt-5">
+    <footer class="bg-info mt-5">
         <div class="container-fluid">
             <div class="row p-5">
                 <div class="col-md-4 col-lg-6">
-                    <span>牛奶<br>與<br>茶</span>
+                    <span>牛奶<br>&茶</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque debitis est repellat
                         accusantium aut culpa velit molestiae pariatur nobis doloribus.</p>
                 </div>
                 <div class="col-md-4 col-lg-3">
                     <ul>
                         <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="22" fill="currentColor"
                                 class="bi bi-envelope-fill" viewBox="0 0 16 16">
                                 <path
                                     d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
@@ -224,7 +196,7 @@
                             <text>kimmy7526@gmail.com</text>
                         </li>
                         <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="22" fill="currentColor"
                                 class="bi bi-telephone-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
                                     d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
@@ -232,7 +204,7 @@
                             <text>XXXXXXXXXX</text>
                         </li>
                         <li>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="22" fill="currentColor"
                                 class="bi bi-house-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
                                     d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
