@@ -1,17 +1,20 @@
-body{
-    background: url(https://images.pexels.com/photos/1411677/pexels-photo-1411677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) fixed no-repeat center/cover;
+body {
+    // background: url(https://images.pexels.com/photos/1411677/pexels-photo-1411677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) fixed no-repeat center/cover;
     // background: url(https://images.pexels.com/photos/1323712/pexels-photo-1323712.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) fixed no-repeat center/cover;
-    letter-spacing:2px;
+    letter-spacing: 2px;
     color: $dark;
 }
-span {
-    font-family: 'Noto Sans TC';
-    font-size: 35px;
-    color: $primary;
-}
+
+
+
 .btn-style1 {
     transition: .3s;
     &:hover {
         color: $light;
     }
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
 }

@@ -1,8 +1,9 @@
 .panels {
     display: flex;
-    min-height: 70vh;
+    min-height: 100vh;
     // box-sizing: border-box;
     overflow: hidden;
+
     p {
         border: 1px solid $info;
         margin: 0;
@@ -15,12 +16,13 @@
         justify-content: center;
         color: $white;
         box-shadow: inset 0px 0px 5px $dark;
-        
+
     }
 
     .panel>:first-child {
         transform: translateY(-500%);
     }
+
     .panel>:last-child {
         transform: translateY(500%);
     }
@@ -41,7 +43,9 @@
         background: url(https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat right/cover;
     }
 
-    .panel.open{
+    .panel.open {
         font-size: 50px;
     }
 }
+
+

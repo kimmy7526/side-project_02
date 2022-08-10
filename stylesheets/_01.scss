@@ -1,12 +1,18 @@
-// 電腦 lg以上
+// > lg
 @media screen and (min-width:992px){
     .ban{
         margin-top: 60px;
     }
-    .row {
-        div:nth-child(3) {
-            justify-content:flex-end;
-            align-items: flex-end;
+    .footer{
+        .row {
+            div:nth-child(1) {
+                text-align: start;
+            }
+            div:nth-child(3) {
+                justify-content:flex-end;
+                align-items: flex-end;
+            }
         }
     }
+   
 }

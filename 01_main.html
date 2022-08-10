@@ -11,13 +11,16 @@
     <link rel="stylesheet" href="scss/all.css">
 </head>
 
-<!-- navbar(logo
-    banner (縮小上滑
-    panels (click:變暗+放大 上下介紹
-    card-group (btn love
-    footer (logo-->
+<!-- layout 
+     banner (縮小上滑
+    !panels (click:變暗+放大 上下介紹
+     card-group (btn-->
 
-<!-- fontRFS -->
+<!-- scss 
+     extend : btn ???
+     font-size:  mixin function-->
+<!-- js API 
+pt-150 calc-->
 
 <body>
     <!-- navbar -->
@@ -46,24 +49,24 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="http://127.0.0.1:5500/04_menu.html"
-                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             食譜
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">介紹</a></li>
-                            <li><a class="dropdown-item" href="#">菜單</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/04-1_menu.html">介紹</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/04-2_menu.html">菜單</a></li>
                             <li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="http://127.0.0.1:5500/05_shop.html"
-                            id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             小舖
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">採購專區</a></li>
-                            <li><a class="dropdown-item" href="#">購物車</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/05-1_shop.html">採購專區</a></li>
+                            <li><a class="dropdown-item" href="http://127.0.0.1:5500/05-2_shop.html">購物車</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -76,16 +79,24 @@
         <div class="row">
             <div class="col-6">
                 <div class="row">
-                    <div class="col col-12 ban-main"><img src="https://picsum.photos/800/600/?random=1" alt=""></div>
-                    <div class="col col-6"><img src="https://picsum.photos/800/600/?random=2" alt=""></div>
+                    <div class="col col-12 ban-main"><img
+                            src="https://images.unsplash.com/photo-1486321680649-cb7e8ead2649?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            alt=""></div>
+                    <div class="col col-6"><img
+                            src="https://images.unsplash.com/photo-1521012012373-6a85bade18da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                            alt=""></div>
                     <div class="col col-6"><img src="https://picsum.photos/800/600/?random=3" alt=""></div>
                 </div>
             </div>
             <div class="col-6">
                 <div class="row">
-                    <div class="col col-6"><img src="https://picsum.photos/800/600/?random=11" alt=""></div>
+                    <div class="col col-6"><img
+                            src="https://images.unsplash.com/photo-1559598467-f8b76c8155d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80random=11"
+                            alt=""></div>
                     <div class="col col-6"><img src="https://picsum.photos/800/600/?random=22" alt=""></div>
-                    <div class="col col-12 ban-main"><img src="https://picsum.photos/800/600/?random=33" alt=""></div>
+                    <div class="col col-12 ban-main"><img
+                            src="https://images.unsplash.com/photo-1597676345712-ba4536073513?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80"
+                            alt=""></div>
                 </div>
             </div>
         </div>
@@ -96,35 +107,35 @@
         <div class="panel">
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, eum. Eligendi numquam aliquid sequi
             </p>
-            <p>輕鬆</p>
+            <h1>輕鬆</h1>
             <p>Nulla mollitia consequuntur aliquam, voluptates natus et dolorem? Ipsum impedit at exercitationem
             </p>
         </div>
         <div class="panel">
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint nisi ipsum culpa, sapiente, debitis
             </p>
-            <p>泡</p>
+            <h1>輕鬆</h1>
             <p>Ipsa nisi optio enim nobis quos molestiae, quia, animi accusantium sint perferendis veritatis
             </p>
         </div>
         <div class="panel">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, harum consectetur? Ducimus
             </p>
-            <p>飲料</p>
+            <h1>輕鬆</h1>
             <p>Optio, consequuntur quas cumque iste sed ut obcaecati quia, quidem natus provident delectus beatae?
             </p>
         </div>
         <div class="panel">
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, harum consectetur? Ducimus
             </p>
-            <p>飲料</p>
+            <h1>輕鬆</h1>
             <p>Optio, consequuntur quas cumque iste sed ut obcaecati quia, quidem natus provident delectus beatae?
             </p>
         </div>
     </div>
 
     <!-- menu -->
-    <div class="menu container mt-5">
+    <!-- <div class="menu container mt-5">
         <div class="row row-cols-1 row-cols-md-3 gx-4">
             <div class="col">
                 <div class="card h-100">
@@ -174,14 +185,18 @@
             <p> 查看更多</p>
         </button>
 
-    </div>
+    </div> -->
 
     <!-- footer-->
     <footer class="bg-info mt-5">
         <div class="container-fluid">
             <div class="row p-5">
                 <div class="col-md-4 col-lg-6">
-                    <span>牛奶<br>&茶</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                    class="bi bi-droplet-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 16a6 6 0 0 0 6-6c0-1.655-1.122-2.904-2.432-4.362C10.254 4.176 8.75 2.503 8 0c0 0-6 5.686-6 10a6 6 0 0 0 6 6ZM6.646 4.646l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448c.82-1.641 1.717-2.753 2.093-3.13Z" />
+                </svg>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque debitis est repellat
                         accusantium aut culpa velit molestiae pariatur nobis doloribus.</p>
                 </div>

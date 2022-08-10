@@ -1,0 +1,134 @@
+//商品名稱/標語
+%title-name {
+    font-family: 'Noto Sans TC';
+    font-size: 30px;
+//     background-image: linear-gradient($primary, $dark);
+//     -webkit-background-clip: text;
+//   color: transparent;
+}
+
+//折價
+%discount {
+    font-size: 10px;
+    text-decoration: line-through;
+}
+
+//間隔navbar
+$section-top: 60px;
+
+
+.five {
+    background: url("../pic/wood.jpg") no-repeat center/cover;
+
+    .shop {
+        position: relative;
+        // margin-top:calc($section-top + 150px);
+        // padding-top: $section-top + 250px;
+
+        .hot {
+            position: absolute;
+            left: 20px;
+            top: -2px;
+            height: 80px;
+            writing-mode: vertical-lr;
+            padding: 3px;
+            background-image: linear-gradient($primary, $secondary);
+            box-shadow: 3px 3px 3px black;
+            font-weight: 700;
+            color: black;
+            z-index: 10;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                border-bottom: 5px solid transparent;
+                border-top: 5px solid $secondary;
+                border-left: 15px solid $secondary;
+                border-right: 15px solid $secondary;
+            }
+        }
+
+        .row {
+            .col {
+                padding-top: 50px;
+                position: relative;
+
+                .card {
+                    &:hover {
+                        transform: translateY(-10px);
+                    }
+
+                    &:hover img {
+                        transform:$tf-scale;
+                    }
+
+                    .card-pic {
+                        overflow: hidden;
+
+                        img {
+                            height: 250px;
+                            transition: .7s .3s ease-out;
+                        }
+                    }
+
+                    .card-body {
+                        color: $dark;
+                        background-image: linear-gradient(-15deg,$primary, $light);
+                        height: 100px;
+
+                        h3 {
+                            @extend %title-name;
+                        }
+
+                        span {
+                            @extend %discount;
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    .modal {
+        border: 0px solid transparent;
+
+        .modal-content {
+            background: linear-gradient(-45deg, $dark, $primary);
+            color: $light;
+
+            .modal-header {
+                h3 {
+                    @extend %title-name;
+                }
+            }
+
+            .modal-body {
+                overflow: hidden;
+
+                img {
+                    width: 300px;
+                    height: 350px;
+                    box-shadow: 5px 5px 10px $dark;
+                }
+
+                p {
+                    margin: 10px 0;
+                    font-size: 35px;
+                }
+
+                span {
+                    @extend %discount;
+                }
+            }
+        }
+
+    }
+
+}

@@ -1,107 +1,83 @@
-// .section {
-//     background: linear-gradient(-45deg, $primary, $secondary) fixed;
-//     padding: 0;
-//     overflow: hidden;
+//柔邊效果
+$bs: inset 0 0 30px 30px $black;
+//照片柔邊效果 
+%bs{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: $bs;             
+}
+.introduction {
+    background: linear-gradient(-45deg, $black, $dark);
+    color: $light;
+    padding: 0;
+    // 用cal計算(此為暫定)
+    // margin-top:$section-top;
 
-//     .row {
-//         height: 80vh;
-//         overflow: hidden;
+    .row {
+        .col {
+            
+            padding: 0;
+            height: 80vh;
+        }
 
-//         .col {
-//             padding: 0;
-//             height: 80vh;
+        .col-pic {
+            position: relative;
 
-//         }
+            img {
+                width: 100%;
+                height: 100%;
+            }
 
-//         .img {
-//             overflow: hidden;
-//             // box-shadow:inset 0px 0px 50px 50px $dark;
-//             img{
-//                 z-index: -1;
-//             }
-//         }
+            &::after {
+              @extend %bs;
+            }
+        }
 
-//         .text {}
-//     }
+        .col-text {
+            
+            box-shadow: $bs ;
+            padding: 50px;
+        }
 
-//     .row:nth-child(3) {
-//         // line-height: 80vh;
-//         span {
-//             color: $dark;
-//             writing-mode: vertical-rl;
-//         }
-//     }
-// }
+        &:nth-child(3) {
+            background: url(../pic/marble.jpg) fixed no-repeat center/cover;
+            .col {   
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                span {
+                    @extend %title-name;
+                    writing-mode: vertical-lr;
+                    background:linear-gradient(-45deg,$primary,$dark);
+                    -webkit-background-clip: text;
+                    color: transparent;
+                }
+            }
+        }
+    }
+}
 
-// .section {
-//     .jumbotron {
-//         position: relative;
-//         height: 80vh;
-
-//         &:nth-child(1) {
-//             background: url("https://images.pexels.com/photos/1913785/pexels-photo-1913785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center/cover;
-//             // box-shadow: inset 0px 0px 100px 100px $light;
-//         }
-
-//         &:nth-child(2) {
-//             display: flex;
-//             background-color: $light;
-
-//             .container-img {
-//                 // width: 100%;
-//                 // height: 60%;
-//                 overflow: hidden;
-
-//                 img {
-//                     object-fit: contain;
-//                 }
-//             }
-
-//             .container-text {}
-
-//             // background: url("https://images.pexels.com/photos/904616/pexels-photo-904616.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center/cover;
-//         }
-
-//         &:nth-child(3) {
-//             background: url("https://images.pexels.com/photos/1411677/pexels-photo-1411677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center/cover;
-//             //    內部高度跟外部高度等高，達到垂直置中。
-//             line-height: 80vh;
-
-//             span {
-//                 writing-mode: vertical-lr;
-//                 // 兩行間距
-//                 line-height: 50px;
-//                 font-family: cursive
-//             }
-//         }
-
-//         .diamond {
-//             position: absolute;
-//             top: 0;
-//             bottom: 0;
-//             right: 100px;
-//             margin: auto;
-//             width: 400px;
-//             height: 400px;
-//             // background: url(https://images.pexels.com/photos/4709425/pexels-photo-4709425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center/cover;
-//             background-color: $light;
-//             transform: rotate(45deg);
-//             box-shadow: inset 0 0 0 25px $info,
-//                 inset 0 0 0 30px $primary;
-
-//             .square {
-//                 position: absolute;
-//                 top: 0;
-//                 bottom: 0;
-//                 right: 0;
-//                 left: 0;
-//                 margin: auto;
-//                 width: 300px;
-//                 height: 300px;
-//                 transform: rotate(-45deg);
-//             }
-//         }
-
-
-//     }
-// }
+//<lg
+@media screen and (max-width:992px) {
+    .introduction {
+        .row {
+            position: relative;
+            .col {
+                width: 100%;
+            }
+            .col-text {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    }
+}
