@@ -1,0 +1,48 @@
+.menu {
+
+    // padding-top: $section-top + 250px;
+    .row {
+        flex-direction: column;
+        flex-wrap: wrap;
+        .col {
+            .card {
+
+                .card-pic {
+                    position: relative;
+                    overflow: hidden;
+
+                    img {
+                        transition: .7s .3s ease-out;
+                    }
+
+                    .card-body {
+                        color: $light;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        display: none;
+                        background-color: rgba(41, 39, 36, 0.7);
+
+                        h3 {
+                            @extend %title-name;
+                        }
+                    }
+
+                    &:hover img {
+                        transform: $tf-scale;
+                    }
+
+                    &:hover .card-body {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+
+                }
+            }
+        }
+    }
+
+}

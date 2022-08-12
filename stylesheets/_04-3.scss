@@ -1,0 +1,20 @@
+.recipe {
+
+    .introduction {
+        text-align: left;
+
+        h1 {
+            color: $primary;
+        }
+
+        h3,
+        hr {
+            color: $secondary;
+        }
+
+        table {
+            width: 100%;
+        }
+    }
+
+}

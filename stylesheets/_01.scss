@@ -1,18 +1,22 @@
 // > lg
-@media screen and (min-width:992px){
-    .ban{
-        margin-top: 60px;
-    }
-    .footer{
-        .row {
-            div:nth-child(1) {
-                text-align: start;
-            }
-            div:nth-child(3) {
-                justify-content:flex-end;
-                align-items: flex-end;
+.main {
+    background: url(https://images.pexels.com/photos/1411677/pexels-photo-1411677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) fixed no-repeat center/cover;
+    @media screen and (min-width:992px) {
+        .ban {
+            margin-top: 60px;
+        }
+
+        .footer {
+            .row {
+                div:nth-child(1) {
+                    text-align: start;
+                }
+
+                div:nth-child(3) {
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                }
             }
         }
     }
-   
 }

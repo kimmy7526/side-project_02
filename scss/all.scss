@@ -3,18 +3,22 @@
 @import "../node_modules/bootstrap/scss/mixins";
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
 //區塊式內容
 @import "../stylesheets/navbar";
 @import "../stylesheets/banner";
 @import "../stylesheets/panels";
-@import "../stylesheets/menu";
+@import "../stylesheets/shop";
 @import "../stylesheets/footer";
 
 @import "../stylesheets/01";
 @import "../stylesheets/02";
 @import "../stylesheets/03";
-@import "../stylesheets/04";
-@import "../stylesheets/05";
+@import "../stylesheets/04-1";
+@import "../stylesheets/04-2";
+@import "../stylesheets/04-3";
+@import "../stylesheets/05-1";
+@import "../stylesheets/05-2";
 
 //元件
 @import "../stylesheets/components";

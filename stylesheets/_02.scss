@@ -1,4 +1,4 @@
-.second {
+.login {
     height: 100vh;
     background: url("https://images.pexels.com/photos/1076429/pexels-photo-1076429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center/cover;
     display: flex;
@@ -6,6 +6,7 @@
 
     .row {
         backdrop-filter: blur(25px);
+
         // height: 40vh;
         .signup {
             background: $info;
@@ -16,13 +17,29 @@
             box-shadow: 3px 3px 9px $dark;
 
             .card-img-overlay {
-                padding: 10%;
+                padding: 25px;
             }
-            
+
+            svg {
+                display: block;
+                width: 100%;
+                //    margin-bottom: 10px;
+            }
+
+            .info {
+                color: $primary;
+                text-decoration: underline solid .3px;
+
+                &:hover {
+                    color: $secondary;
+                }
+            }
+
         }
 
-        .login {
+        .signin {
             color: $secondary;
+
             // height:300px;
             .form-control {
                 background-color: transparent;
@@ -34,7 +51,7 @@
             .form-check {
                 text-align: start;
             }
-            
+
         }
     }
 }

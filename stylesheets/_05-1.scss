@@ -1,0 +1,21 @@
+//商品名稱/標語
+%title-name {
+    font-family: 'Noto Sans TC';
+    font-size: 30px;
+    //     background-image: linear-gradient($primary, $dark);
+    //     -webkit-background-clip: text;
+    //   color: transparent;
+}
+
+//折價
+%discount {
+    font-size: 10px;
+    text-decoration: line-through;
+}
+
+//間隔navbar
+$section-top: 60px;
+
+.store {
+    background: url("../pic/wood.jpg") no-repeat center/cover;
+}
