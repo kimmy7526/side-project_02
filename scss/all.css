@@ -12008,7 +12008,7 @@ fieldset:disabled .btn {
 }
 
 .ban {
-  margin-top: 80px;
+  margin: 26px 0;
   height: 80vh;
   overflow: hidden;
 }
@@ -12028,20 +12028,7 @@ fieldset:disabled .btn {
   height: 50vh;
 }
 
-.panels {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 100vh;
-  overflow: hidden;
-}
-
-.panels p {
-  border: 1px solid #393E6D;
-  margin: 0;
-}
-
-.panels .panel {
+.panels .panel, .panels .panel > * {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12049,45 +12036,87 @@ fieldset:disabled .btn {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.panels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
   color: #fff;
   -webkit-box-shadow: inset 0px 0px 5px #3A302E;
           box-shadow: inset 0px 0px 5px #3A302E;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 30px;
 }
 
-.panels .panel > :first-child {
-  -webkit-transform: translateY(-500%);
-          transform: translateY(-500%);
-}
-
-.panels .panel > :last-child {
-  -webkit-transform: translateY(500%);
-          transform: translateY(500%);
+.panels .panel {
+  height: 100vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .panels .panel:nth-child(1) {
-  background: url(https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat left/cover;
+  background: url(../pic/victoria-shes-jdO2CJ_OwCo-unsplash.jpg) no-repeat center/cover;
 }
 
 .panels .panel:nth-child(2) {
-  background: url(https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat 45%/cover;
+  background: url(../pic/denis-tuksar-n73TTunlskE-unsplash.jpg) no-repeat center/cover;
 }
 
 .panels .panel:nth-child(3) {
-  background: url(https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat 65%/cover;
+  background: url(../pic/chinh-le-duc-cO36bp1F-Cg-unsplash.jpg) no-repeat center/cover;
 }
 
 .panels .panel:nth-child(4) {
-  background: url(https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat right/cover;
+  background: url(../pic/sam-hojati-pb7oJwtNVU4-unsplash.jpg) no-repeat center/cover;
+}
+
+.panels .panel > * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin: 0;
+}
+
+.panels .panel > *:first-child {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.panels .panel > *:last-child {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 
 .panels .panel.open {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.panels .panel.open h1, .panels .panel.open .h1 {
   font-size: 50px;
+  font-weight: 800;
+}
+
+.panels .panel.open-active > *:first-child {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.panels .panel.open-active > *:last-child {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .shop {
@@ -12453,15 +12482,6 @@ footer .row div:nth-child(3) {
   }
 }
 
-.menu .row {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .menu .row .col .card .card-pic {
   position: relative;
   overflow: hidden;
@@ -12529,12 +12549,23 @@ footer .row div:nth-child(3) {
 }
 
 .store {
+  padding-top: 100px;
   background: url("../pic/wood.jpg") no-repeat center/cover;
 }
 
 body {
   letter-spacing: 2px;
   color: #3A302E;
+}
+
+
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+  padding: 0px;
 }
 
 .btn-style1 {

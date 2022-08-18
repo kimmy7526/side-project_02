@@ -2,9 +2,6 @@
 %title-name {
     font-family: 'Noto Sans TC';
     font-size: 30px;
-    //     background-image: linear-gradient($primary, $dark);
-    //     -webkit-background-clip: text;
-    //   color: transparent;
 }
 
 //折價
@@ -13,9 +10,9 @@
     text-decoration: line-through;
 }
 
-//間隔navbar
-$section-top: 60px;
+
 
 .store {
+    padding-top:100px;
     background: url("../pic/wood.jpg") no-repeat center/cover;
 }
