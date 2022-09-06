@@ -1,15 +1,15 @@
 body {
-
     letter-spacing: 2px;
     color: $dark;
 }
 
-.container-fluid{
+.container-fluid {
     padding: 0px;
 }
 
 .btn-style1 {
     transition: .3s;
+
     &:hover {
         color: $light;
     }
@@ -19,4 +19,3 @@ img {
     object-fit: cover;
     object-position: center;
 }
-

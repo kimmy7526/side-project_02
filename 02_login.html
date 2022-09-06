@@ -17,14 +17,15 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="https://kimmy7526.github.io/side-project_02/02_login.html">登入</a>
+                        <a class="nav-link" aria-current="page"
+                            href="https://kimmy7526.github.io/side-project_02/02_login.html">登入</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://kimmy7526.github.io/side-project_02/03_game.html">測驗</a>
@@ -44,8 +45,10 @@
                             食譜
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="https://kimmy7526.github.io/side-project_02/04-1_menu.html">介紹</a></li>
-                            <li><a class="dropdown-item" href="https://kimmy7526.github.io/side-project_02/04-2_menu.html">菜單</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://kimmy7526.github.io/side-project_02/04-1_menu.html">介紹</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://kimmy7526.github.io/side-project_02/04-2_menu.html">菜單</a></li>
                             <li>
                         </ul>
                     </li>
@@ -55,7 +58,8 @@
                             小舖
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="https://kimmy7526.github.io/side-project_02/05-1_shop.html">採購專區</a></li>
+                            <li><a class="dropdown-item"
+                                    href="https://kimmy7526.github.io/side-project_02/05-1_shop.html">採購專區</a></li>
                             <!-- <li><a class="dropdown-item" href="https://kimmy7526.github.io/side-project_02/05-2_shop.html">購物車</a></li> -->
                         </ul>
                     </li>
@@ -83,7 +87,6 @@
                             </svg>
                             <p class="card-text">※ 註冊表示您同意<a href="#info" data-bs-toggle="modal" class="info">服務條款</a>
                             </p>
-                            <!-- <button type="submit" class="btn btn-outline-primary btn-style1">Sign up</button> -->
                             <input type="button" value="Sign up" class="btn btn-outline-primary btn-style1">
                         </div>
                     </div>
@@ -96,18 +99,17 @@
                         <form>
                             <div class="mb-3">
                                 <h2>Login</h2>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Account">
+                                <input type="email" class="form-control" id="email" placeholder="Account">
                             </div>
                             <div class="mb-3">
-                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                <input type="password" class="form-control" id="password"
                                     placeholder="Password">
                             </div>
                             <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input g-5" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">保持登入</label>
                             </div>
-                            <!-- <button type="submit" class="btn btn-primary">Log in</button> -->
-                            <input type="button" value="Log in" class="btn btn-primary">
+                            <input type="button" value="Log in" class="btn btn-primary" id="logIn">
                         </form>
                     </div>
                 </div>
@@ -201,7 +203,7 @@
             &copy; 2022/7/7 僅練習使用 非商業網站
         </div>
     </footer>
-
+    <script src="./01.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
